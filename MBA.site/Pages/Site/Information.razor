@@ -1,165 +1,203 @@
 ﻿@page "/information"
+@using Core.Models.Entity;
+@using Core.Models.Repository;
+@inject ISectionRepo _sectionRepo
+@inject IDescribeRepo _describeRepo
+@inject IImageRepo _imageRepo
+@inject ILeaderShipRepo _leaderShipRepo
 
     <!--About-------------------------------------------------------------------------------------------------------------------->
+<div class="mytabs" style = "justify-content:center">
+    @foreach (var _section in _sections)
+    {
+        @if(_section.Name == "About")
+        {
+                
+                    <input type="radio" id="@_section.Name" name="mytabs" checked="checked">
+                <label for="@_section.Name">@_section.Name</label>
+            <div class="tab">
+                <div class="contents1" style ="padding-top:70px">
+                    <div class="about">
+                        <div class ="heading"style ="padding-bottom:55px">
+                                    <h2 style="margin-bottom:5px"><p>@TakeDescription(_section.Id,"Big Title")</p></h2>
+                            <span style="margin-left:20px">MBA INTERNATIONAL JSC</span>
+                        </div>
+                        <div class ="image">
+                            <img style ="width:500px" src="@TakeImage(_section.Id, null)">
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p><span style="color:#ff0000;">
+                                    <span style="font-size:22px;">
+                                                <strong>@TakeDescription(_section.Id,"General Manager")</strong>
+                                    </span>
+                                </span>
+                            </p>
 
-  <div class="mytabs" style = "justify-content:center">
-    <input type="radio" id="tabfree" name="mytabs" checked="checked">
-    <label for="tabfree">About</label>
-    <div class="tab">
-        <div class="contents1" style ="padding-top:70px">
-            <div class="about">
-                <div class ="heading"style ="padding-bottom:55px">
-                    <h2 style="margin-bottom:5px">VỀ CÔNG TY</h2>
-                    <span style="margin-left:20px">MBA INTERNATIONAL JSC</span>
-                </div>
-                <div class ="image">
-                    <img style ="width:500px" src="/image/Information/ceo.jpg">
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p><span style="color:#ff0000;">
-                            <span style="font-size:22px;">
-                                <strong>Th.S&nbsp;NGUYỄN BÁ TÚ</strong>
-                            </span>
-                        </span>
-                    </p>
+                            <div>
 
-                    <div>
+                            <div class="name"><span>@TakeDescription(_section.Id,"Position Manager")</span></div>
 
-                    <div class="name"><span>Tổng Giám đốc - Người sáng lập MBA</span></div>
+                            <div class="name1">
+                                    <div><span style="color:#ff0000;">@TakeDescription(_section.Id,"Slogan")</span></div>
 
-                    <div class="name1">
-                    <div><span style="color:#ff0000;">Let’s Grow Together!</span></div>
-
-                    <div><span style="color:#ff0000;">Cùng đến thành công!</span></div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="text" style="padding:70px; padding-left:170px; background-color:rgb(245, 245, 245)">
+                                <span style="margin-bottom:15px">@TakeDescription(_section.Id,"Tag")</span>
+                                <h2 style="margin-bottom:25px">@TakeDescription(_section.Id,"Title")</h2>
+                                <p style="margin-bottom:15px">@TakeDescription(_section.Id,"Detail")</p>
                     </div>
                 </div>
-            </div>
-            <div class="text" style="padding:70px; padding-left:170px; background-color:rgb(245, 245, 245)">
-                <span style="margin-bottom:15px">MBA International JSC</span>
-                <h2 style="margin-bottom:25px">CÔNG TY CỔ PHẦN QUỐC TẾ MBA</h2>
-                <p style="margin-bottom:15px">Công ty CP Quốc tế MBA là nhà sản xuất và phân phối hàng đầu các giải pháp toàn diện cho ngành Giáo Dục – Y Tế - Công Nghệ Cao. Với hơn 17&nbsp;năm kinh nghiệm, MBA tự hào với đội ngũ nhân viên giàu kinh nghiệm, nhiệt huyết và chuyên nghiệp, luôn mang đến cho khách hàng những trải nghiệm tốt nhất về sản phẩm và dịch vụ chính hãng. Với &nbsp;xu hướng phát triển không ngừng của ngành khoa học thông tin và cách mạng công nghiệp 4.0, nhằm đáp ứng nhu cầu ngày càng cao của khách hàng trong việc trang bị các thiết bị điện tử và các giải pháp công nghệ, Công Ty Cổ Phần Quốc Tế MBA đã mang đến cho Quý khách hàng những sản phẩm hiện đại nhất của các hãng nổi tiếng trên thị trường&nbsp;</p>
-                <p style="margin-bottom:15px">Bên cạnh đó ngoài chức năng phân phối, MBA cũng là đại diện bảo hành, bảo trì, sữa chữa và thực hiện các dịch vụ sau bán hàng của các đối tác nói trên nhằm cung cấp giải pháp toàn diện, hiệu quả cho khách hàng khi sử dụng sản phẩm MBA phân phối với đội kỹ thuật viên giàu kinh nghiệm, linh kiện thay thế chính hãng và giá cả hợp lý.</p>
-            </div>
-        </div>
 
-    </div>
+            </div>
+            
+        }
 
     <!--Vision-------------------------------------------------------------------------------------------------------------------->
-    <input type="radio" id="tabsilver" name="mytabs">
-    <label for="tabsilver">Vision</label>
+        @if (_section.Name == "Vision")
+        {
+            
+    <input type="radio" id="@_section.Name" name="mytabs">
+                <label for="@_section.Name">@_section.Name</label>
     <div class="tab" style ="padding-left:20px; padding-right:20px">
         <div class="content2" style ="padding-top:70px">
             <div class ="heading"style ="padding-bottom:55px">
-                <h2 style="margin-bottom:5px">TẦM NHÌN - SỨ MỆNH</h2>
+                        <h2 style="margin-bottom:5px">@TakeDescription(_section.Id,"Big Title")</h2>
                 <span style="margin-left:20px">MBA INTERNATIONAL JSC</span>
             </div>
             <div class ="body" style ="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 1em;">
                 <div class ="text" style ="padding:50px 60px 50px 60px">
-                        <h2>Tầm nhìn thương hiệu</h2>
+                        <h2>@TakeDescription(_section.Id,"Title")u</h2>
 
-                        <p>MBA International Corporation luôn hướng tới mục tiêu duy trì vị trí thương hiệu hàng đầu tại Việt Nam trong lĩnh vực phân phối các Thiết bị Giáo dục –&nbsp;Y tế – Công nghệ cao.</p>
+                        <p>@TakeDescription(_section.Id,"Detail")</p>
                 </div>
                  <div class ="image">
-                        <img src="/image/Information/vision1.jpg" />
+                        <img src="@TakeImage(_section.Id,"Image 1")" />
                 </div>
                  <div class ="text" style ="padding:50px 60px 50px 60px">
-                        <h2>Sứ mệnh</h2>
+                                <h2>@TakeDescription(_section.Id,"Title2")</h2>
 
-                        <p>Với tôn chỉ " Let's Grow Together! - Cùng đến thành công !", Công ty CP Quốc Tế MBA luôn hướng tới sự phát triển bền vững không chỉ cho doanh nghiệp mà còn cho cộng đồng bằng cam kết mang những sản phẩm ngành Giáo Dục - Y Tế - Công Nghệ Cao chất lượng hàng đầu Thế giới với giá cả cạnh tranh nhất đến đông đảo Quý khách hàng.</p>
+                                <p>@TakeDescription(_section.Id,"Detail2")</p>
                 </div>
                  <div class ="image">
-                     <img src="/image/Information/vision2.jpg" />
+                        <img src="@TakeImage(_section.Id,"Image 2")" />
                 </div>
             </div>
         </div>
 
     </div>
+        }
+
 
     <!--History-------------------------------------------------------------------------------------------------------------------->
-    <input type="radio" id="tabgold" name="mytabs">
-    <label for="tabgold">History</label>
+        @if (_section.Name == "History")
+        {
+            
+        <input type="radio" id="@_section.Name" name="mytabs">
+                <label for="@_section.Name">@_section.Name</label>
     <div class="tab" style ="padding-left:20px; padding-right:20px">
         <div class="content2" style ="padding-top:70px">
             <div class ="heading"style ="padding-bottom:55px">
-                <h2 style="margin-bottom:5px">LỊCH SỬ HÌNH THÀNH</h2>
+                <h2 style="margin-bottom:5px">@TakeDescription(_section.Id,"Big Title")</h2>
                 <span style="margin-left:20px">MBA INTERNATIONAL JSC</span>
             </div>
             <div class="image">
-                <img src="/image/Information/history.jpg"
+                <img src="@TakeImage(_section.Id,null)">
             </div>
         </div>
 
     </div>
-    
+        }
     <!--CEO-------------------------------------------------------------------------------------------------------------------->
-    <input type="radio" id="tabceo" name="mytabs">
-    <label for="tabceo">CEO</label>
+        @if (_section.Name == "Leadership")
+        {
+            
+        <input type="radio" id="@_section.Name" name="mytabs">
+        <label for="@_section.Name">@_section.Name</label>
     <div class="tab" style ="padding-left:20px; padding-right:20px">
         <div class="content2" style ="padding-top:70px">
             <div class ="heading"style ="padding-bottom:55px">
-                <h2 style="margin-bottom:5px">BAN LÃNH ĐẠO</h2>
+                <h2 style="margin-bottom:5px">@TakeDescription(_section.Id,"Big Title")</h2>
                 <span style="margin-left:20px">MBA INTERNATIONAL JSC</span>
             </div>
             <div class="ceo" style ="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; grid-gap: 1.5em;">
-                <div class="ceo1">
-                    <img src="/image/Information/ceo1.jpg"
-                    <div class="i-desc">
-                        <div class="i-title">
-                            <h3><a href="#" tabindex="0">MR NGUYỄN TRÍ ĐĂNG</a></h3>
-                        </div>
-                        <div class="i-content">TRỢ LÝ TỔNG GIÁM ĐỐC</div>
-                    </div>
-                </div>
 
-                <div class="ceo2">
-                    <img src="/image/Information/ceo2.jpg"
-                    <div class="i-desc">
-                        <div class="i-title">
-                            <h3><a href="#" tabindex="0">MR NGUYỄN TRÍ ĐĂNG</a></h3>
+                @foreach(var _leaderShip in _leaderShips)
+                {
+                    <div class="ceo1">
+                        <img src="@_leaderShip.ImageUrl">
+                        <div class="i-desc">
+                            <div class="i-title">
+                                <h3><a href="#" tabindex="0">@_leaderShip.Name</a></h3>
+                            </div>
+                            <div class="i-content">@_leaderShip.Position</div>
                         </div>
-                        <div class="i-content">TRỢ LÝ TỔNG GIÁM ĐỐC</div>
-                    </div>
-                </div>
-
-                <div class="ceo3">
-                    <img src="/image/Information/ceo3.jpg"
-                    <div class="i-desc">
-                        <div class="i-title">
-                            <h3><a href="#" tabindex="0">MR NGUYỄN TRÍ ĐĂNG</a></h3>
-                        </div>
-                        <div class="i-content">TRỢ LÝ TỔNG GIÁM ĐỐC</div>
-                    </div>
-                </div>
-
-                <div class="ceo4">
-                    <img src="/image/Information/ceo4.jpg"
-                    <div class="i-desc">
-                        <div class="i-title">
-                            <h3><a href="#" tabindex="0">MR NGUYỄN TRÍ ĐĂNG</a></h3>
-                        </div>
-                        <div class="i-content">TRỢ LÝ TỔNG GIÁM ĐỐC</div>
-                    </div>
-                </div>
-
-                <div class="ceo5">
-                    <img src="/image/Information/ceo5.jpg"
-                    <div class="i-desc">
-                        <div class="i-title">
-                            <h3><a href="#" tabindex="0">MR NGUYỄN TRÍ ĐĂNG</a></h3>
-                        </div>
-                        <div class="i-content">TRỢ LÝ TỔNG GIÁM ĐỐC</div>
-                    </div>
-                </div>
-
+                    </div>        
+                }
 
             </div>
         </div>
 
     </div>
+        }
+
+    }
+</div>
+    
+@code{
+    private List<Section> _sections = new List<Section>();
+    private List<Describe> _describes = new List<Describe>();
+    private List<Image> _images = new List<Image>();
+    private List<LeaderShip> _leaderShips = new List<LeaderShip>();
+    protected override async Task OnInitializedAsync()
+    {
+        _sections = await _sectionRepo.GetAllSection(2);
+        _leaderShips = await _leaderShipRepo.GetAllLeaderShipAsync();
 
 
-  </div>
+    }
+
+    protected List<Describe> TakeAllDescriptionBySectionId(int sectionId)
+    {
+        foreach(var _section in _sections)
+        {
+            if(_section.Id == sectionId)
+            {
+                _describes = _describeRepo.GetAllDescribeAsync(sectionId);
+            }
+        }
+        return _describes;
+    }
+    protected string TakeDescription(int sectionId, string Name)
+    {
+        var _describes = TakeAllDescriptionBySectionId(sectionId);
+        var _description = _describes.Where(s => s.Name == Name).Select(s => s.Description).FirstOrDefault();
+        return _description;
+    }
+
+    protected List<Image> TakeAllImageBySectionId(int sectionId)
+    {
+        
+        foreach (var _section in _sections)
+        {
+            if (_section.Id == sectionId)
+            {
+                _images = _imageRepo.GetAllImage(sectionId);
+            }
+        }
+        return _images;
+    }
+
+    protected string TakeImage(int sectionId, string Name)
+    {
+        var _images = TakeAllImageBySectionId(sectionId);
+        var _image = _images.Where(s => s.Name == Name).Select(s => s.Url).FirstOrDefault();
+        return _image;
+    }
 
 
+}
+    

@@ -9,8 +9,7 @@ namespace Core.Models.Repository
 {
     public interface IImageRepo
     {
-        Task<List<Image>> GetAllImage(int SectionId);
-        Task<Image> GetImageBySectionId(int SectionId, int Id);
+        List<Image> GetAllImage(int SectionId);
         Task<Image> UpdateImage(int SectionId, int Id, Image Describe);
         Task<Image> CreateImage(int SectionId, Image Describe);
         Task<Image> DeleteImage(int SectionId, int Id);

@@ -37,7 +37,7 @@ namespace Infrastructure.Data
 				);
 
 			modelBuilder.Entity<Describe>().HasData(
-				new Describe() { Id = 1, Name = "Big Title", Description = "VỀ CÔNG TY\r\nMBA INTERNATIONAL JSC", SectionId = 3, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new Describe() { Id = 1, Name = "Big Title", Description = "VỀ CÔNG TY", SectionId = 3, CreatedBy = "Admin", CreatedDate = DateTime.Now },
 				new Describe() { Id = 2, Name = "General Manager", Description = "Tổng Giám đốc - Người sáng lập MBA", SectionId = 3, CreatedBy = "Admin", CreatedDate = DateTime.Now },
 				new Describe() { Id = 3, Name = "Slogan", Description = "Let’s Grow Together!\r\nCùng đến thành công!", SectionId = 3, CreatedBy = "Admin", CreatedDate = DateTime.Now },
 				new Describe() { Id = 4, Name = "Tag", Description = "MBA International JSC", SectionId = 3, CreatedBy = "Admin", CreatedDate = DateTime.Now },
@@ -46,17 +46,31 @@ namespace Infrastructure.Data
 				" Bên cạnh đó ngoài chức năng phân phối, MBA cũng là đại diện bảo hành, bảo trì, sữa chữa và thực hiện các dịch vụ sau bán hàng của các đối tác nói trên nhằm cung cấp giải pháp toàn diện, hiệu quả cho khách hàng khi sử dụng sản phẩm MBA phân phối với đội kỹ thuật viên giàu kinh nghiệm, linh kiện thay thế chính hãng và giá cả hợp lý.", SectionId = 3, CreatedBy = "Admin", CreatedDate = DateTime.Now},
 
 
-				new Describe() { Id = 7, Name = "Big Title", Description = "TẦM NHÌN - SỨ MỆNH\r\nMBA INTERNATIONAL JSC", SectionId = 4, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new Describe() { Id = 7, Name = "Big Title", Description = "TẦM NHÌN - SỨ MỆNH", SectionId = 4, CreatedBy = "Admin", CreatedDate = DateTime.Now },
 				new Describe() { Id = 8, Name = "Title", Description = "Tầm nhìn thương hiệu", SectionId = 4, CreatedBy = "Admin", CreatedDate = DateTime.Now },
 				new Describe() { Id = 9, Name = "Detail", Description = "MBA International Corporation luôn hướng tới mục tiêu duy trì vị trí thương hiệu hàng đầu tại Việt Nam trong lĩnh vực phân phối các Thiết bị Giáo dục – Y tế – Công nghệ cao.", SectionId = 4, CreatedBy = "Admin", CreatedDate = DateTime.Now },
 				new Describe() { Id = 10, Name = "Title2", Description = "Sứ mệnh", SectionId = 4, CreatedBy = "Admin", CreatedDate = DateTime.Now },
 				new Describe() { Id = 11, Name = "Title2", Description = "Với tôn chỉ \" Let's Grow Together! - Cùng đến thành công !\", Công ty CP Quốc Tế MBA luôn hướng tới sự phát triển bền vững không chỉ cho doanh nghiệp mà còn cho cộng đồng bằng cam kết mang những sản phẩm ngành Giáo Dục - Y Tế - Công Nghệ Cao chất lượng hàng đầu Thế giới với giá cả cạnh tranh nhất đến đông đảo Quý khách hàng.", SectionId = 4, CreatedBy = "Admin", CreatedDate = DateTime.Now },
 
-				new Describe() { Id = 12, Name = "Big Title", Description = "LỊCH SỬ HÌNH THÀNH\r\nMBA INTERNATIONAL JSC", SectionId = 5, CreatedBy = "Admin", CreatedDate = DateTime.Now },
-				new Describe() {Id = 13, Name = "Big Title", Description = "BAN LÃNH ĐẠO\r\nMBA INTERNATIONAL JSC", SectionId = 6, CreatedBy = "Admin", CreatedDate = DateTime.Now }
+				new Describe() { Id = 12, Name = "Big Title", Description = "LỊCH SỬ HÌNH THÀNH", SectionId = 5, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new Describe() {Id = 13, Name = "Big Title", Description = "BAN LÃNH ĐẠO", SectionId = 6, CreatedBy = "Admin", CreatedDate = DateTime.Now }
+				);
+			modelBuilder.Entity<Image>().HasData(
+				new Image() { Id = 1, Url = "/image/index/bg1.jpg", SectionId = 1, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new Image() { Id = 2, Url = "/image/Information/ceo.jpg", SectionId = 3, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new Image() { Id = 3, Url = "/image/Information/vision1.jpg", SectionId = 4,Name = "Image 1" ,CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new Image() { Id = 4, Url = "/image/Information/vision2.jpg", SectionId = 4, Name = "Image 2", CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new Image() { Id = 5, Url = "/image/Information/history.jpg", SectionId = 5, CreatedBy = "Admin", CreatedDate = DateTime.Now }
 				);
 
+			modelBuilder.Entity<LeaderShip>().HasData(
 
+				new LeaderShip() { Id = 1, ImageUrl = "/image/Information/ceo1.jpg", Name = "MR NGUYỄN TRÍ ĐĂNG", Position = "TRỢ LÝ TỔNG GIÁM ĐỐC", CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new LeaderShip() { Id = 2, ImageUrl = "/image/Information/ceo2.jpg", Name = "MR NGUYỄN TRÍ ĐĂNG", Position = "TRỢ LÝ TỔNG GIÁM ĐỐC", CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new LeaderShip() { Id = 3, ImageUrl = "/image/Information/ceo3.jpg", Name = "MR NGUYỄN TRÍ ĐĂNG", Position = "TRỢ LÝ TỔNG GIÁM ĐỐC", CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new LeaderShip() { Id = 4, ImageUrl = "/image/Information/ceo4.jpg", Name = "MR NGUYỄN TRÍ ĐĂNG", Position = "TRỢ LÝ TỔNG GIÁM ĐỐC", CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new LeaderShip() { Id = 5, ImageUrl = "/image/Information/ceo5.jpg", Name = "MR NGUYỄN TRÍ ĐĂNG", Position = "TRỢ LÝ TỔNG GIÁM ĐỐC", CreatedBy = "Admin", CreatedDate = DateTime.Now }
+				);
 		}
     }
 }

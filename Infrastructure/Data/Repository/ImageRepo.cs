@@ -37,9 +37,9 @@ namespace Infrastructure.Data.Repository
             return exsitImage;
         }
 
-        public async Task<List<Image>> GetAllImage(int SectionId)
+        public List<Image> GetAllImage(int SectionId)
         {
-            return await _mbaContext.Images.Where(s => s.SectionId == SectionId).ToListAsync();
+            return _mbaContext.Images.Where(s => s.SectionId == SectionId).ToList();
         }
 
 

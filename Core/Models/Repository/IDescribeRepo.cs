@@ -9,7 +9,8 @@ namespace Core.Models.Repository
 {
     public interface IDescribeRepo
     {
-        Task<List<Describe>> GetAllDescribe(int SectionId);
+        List<Describe> GetAllDescribeAsync(int SectionId);
+        List<Describe> GetAllDescribe(int SectionId);
         Task<Describe> GetDescribeBySectionId(int SectionId,int Id);
         Task<Describe> UpdateDescribe(int SectionId, int Id, Describe describe);
         Task<Describe> CreateDescribe(int SectionId, Describe describe);

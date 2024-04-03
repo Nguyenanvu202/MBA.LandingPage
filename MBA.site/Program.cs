@@ -1,4 +1,6 @@
+using Core.Models.Repository;
 using Infrastructure.Data;
+using Infrastructure.Data.Repository;
 using MBA.site.Data;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
@@ -12,6 +14,11 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<MBAContext>();
 builder.Services.AddBlazorBootstrap();
+builder.Services.AddScoped<IPageRepo, PageRepo>();
+builder.Services.AddScoped<ISectionRepo, SectionRepo>();
+builder.Services.AddScoped<IDescribeRepo, DescribeRepo>();
+builder.Services.AddScoped<IImageRepo, ImageRepo>();
+builder.Services.AddScoped<ILeaderShipRepo, LeaderShipRepo>();
 builder.Services.AddDbContext<MBAContext>(
     o => o.UseSqlServer(builder.Configuration.GetConnectionString("MBADatabaseConnectionString")));
 var app = builder.Build();

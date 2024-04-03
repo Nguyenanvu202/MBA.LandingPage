@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace Infrastructure.Data.Repository
 {
@@ -37,11 +38,16 @@ namespace Infrastructure.Data.Repository
             return exsitDescribe;
         }
 
-        public async Task<List<Describe>> GetAllDescribe(int SectionId)
+        public List<Describe> GetAllDescribeAsync(int SectionId)
         {
-            return await _mbaContext.Describes.Where(s => s.SectionId == SectionId).ToListAsync();
+            return _mbaContext.Describes.Where(s => s.SectionId == SectionId).ToList();
         }
 
+        public List<Describe> GetAllDescribe(int SectionId)
+        {
+            var describe = _mbaContext.Describes.Where(s => s.SectionId == SectionId).ToList();
+            return describe;
+        }
 
         public async Task<Describe> GetDescribeBySectionId(int SectionId, int Id)
         {
@@ -58,5 +64,7 @@ namespace Infrastructure.Data.Repository
             await _mbaContext.SaveChangesAsync();
             return exsitDescribe;
         }
+
+
     }
 }
