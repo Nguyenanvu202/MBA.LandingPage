@@ -17,11 +17,10 @@ namespace Infrastructure.Data.Config
 			builder.HasKey(x => x.Id);
 			builder.Property(x => x.Name).HasMaxLength(128).IsRequired();
 			builder.Property(x => x.ImageUrl).HasMaxLength(128).IsRequired();
-			builder.Property(x => x.Url).HasMaxLength(128).IsRequired();
 			builder.Property(x => x.Code).HasMaxLength(55).IsRequired();
 			builder.Property(x => x.Status).HasMaxLength(55).IsRequired();
-			builder.Property(x => x.Specifications).HasMaxLength(1024).IsRequired();
-			builder.Property(x => x.Description).HasMaxLength(1024).IsRequired();
+			builder.Property(x => x.Specifications).HasMaxLength(1024).IsRequired(false);
+			builder.Property(x => x.Description).HasMaxLength(1024).IsRequired(false);
 			builder.Property(d => d.CreatedBy).HasMaxLength(55).IsRequired();
 			builder.Property(d => d.CreatedDate).IsRequired();
 			builder.Property(d => d.UpdatedDate).IsRequired(false);

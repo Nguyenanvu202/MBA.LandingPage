@@ -71,6 +71,28 @@ namespace Infrastructure.Data
 				new LeaderShip() { Id = 4, ImageUrl = "/image/Information/ceo4.jpg", Name = "MR NGUYỄN TRÍ ĐĂNG", Position = "TRỢ LÝ TỔNG GIÁM ĐỐC", CreatedBy = "Admin", CreatedDate = DateTime.Now },
 				new LeaderShip() { Id = 5, ImageUrl = "/image/Information/ceo5.jpg", Name = "MR NGUYỄN TRÍ ĐĂNG", Position = "TRỢ LÝ TỔNG GIÁM ĐỐC", CreatedBy = "Admin", CreatedDate = DateTime.Now }
 				);
+
+			modelBuilder.Entity<Product>().HasData(
+				new Product() { Id = 1, Name = "CÔNG NGHỆ CAO", ImageUrl = "/image/Product/product1.jpg", CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new Product() { Id = 2, Name = "THIẾT BỊ Y TẾ", ImageUrl = "/image/Product/product2.jpg", CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new Product() { Id = 3, Name = "THIẾT BỊ GIÁO DỤC", ImageUrl = "/image/Product/product3.jpg", CreatedBy = "Admin", CreatedDate = DateTime.Now }
+				);
+			modelBuilder.Entity<ProductDetail>().HasData(
+				new ProductDetail() { Id = 1, Name = "CÔNG NGHỆ THÔNG TIN", ImageUrl = "/image/Product/moredetail/product1.jpg", Code = "167", Status = "Còn Hàng", Description = null, Specifications = null, ProductId = 1, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new ProductDetail() { Id = 2, Name = "CÔNG NGHỆ SINH HỌC", ImageUrl = "/image/Product/moredetail/product2.jpg", Code = "166", Status = "Còn Hàng", Description = null, Specifications = null, ProductId = 1, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new ProductDetail() { Id = 3, Name = "CÔNG NGHỆ VẬT LIỆU MỚI", ImageUrl = "/image/Product/moredetail/product3.jpg", Code = "166", Status = "Còn Hàng", Description = null, Specifications = null, ProductId = 1, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new ProductDetail() { Id = 4, Name = "CÔNG NGHỆ TỰ ĐỘNG HOÁ", ImageUrl = "/image/Product/moredetail/product4.jpg", Code = "166", Status = "Còn Hàng", Description = null, Specifications = null, ProductId = 1, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				
+				new ProductDetail() { Id = 5, Name = "HỆ THỐNG PHÒNG TAI MŨI HỌNG", ImageUrl = "/image/Product/moredetail/product4.jpg", Code = "166", Status = "Còn Hàng", Description = null, Specifications = null, ProductId = 2, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new ProductDetail() { Id = 6, Name = "HỆ THỐNG PHÒNG CHUẨN ĐOÁN", ImageUrl = "/image/Product/moredetail/product4.jpg", Code = "166", Status = "Còn Hàng", Description = null, Specifications = null, ProductId = 2, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new ProductDetail() { Id = 7, Name = "HỆ THỐNG PHÒNG CHỤP CT", ImageUrl = "/image/Product/moredetail/product4.jpg", Code = "166", Status = "Còn Hàng", Description = null, Specifications = null, ProductId = 2, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new ProductDetail() { Id = 8, Name = "HỆ THỐNG PHÒNG CHỤP PHẪU THUẬT", ImageUrl = "/image/Product/moredetail/product4.jpg", Code = "166", Status = "Còn Hàng", Description = null, Specifications = null, ProductId = 2, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				
+				new ProductDetail() { Id = 9, Name = "PHÒNG HỌC BỘ MÔN HOÁ", ImageUrl = "/image/Product/moredetail/product4.jpg", Code = "166", Status = "Còn Hàng", Description = null, Specifications = null, ProductId = 3, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new ProductDetail() { Id = 10, Name = "PHÒNG HỌC BỘ MÔN LÝ", ImageUrl = "/image/Product/moredetail/product4.jpg", Code = "166", Status = "Còn Hàng", Description = null, Specifications = null, ProductId = 3, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new ProductDetail() { Id = 11, Name = "PHÒNG HỌC TIN HỌC", ImageUrl = "/image/Product/moredetail/product4.jpg", Code = "166", Status = "Còn Hàng", Description = null, Specifications = null, ProductId = 3, CreatedBy = "Admin", CreatedDate = DateTime.Now },
+				new ProductDetail() { Id = 12, Name = "PHÒNG HỌC BỘ MÔN SINH", ImageUrl = "/image/Product/moredetail/product4.jpg", Code = "166", Status = "Còn Hàng", Description = null, Specifications = null, ProductId = 3, CreatedBy = "Admin", CreatedDate = DateTime.Now }
+				);
 		}
     }
 }

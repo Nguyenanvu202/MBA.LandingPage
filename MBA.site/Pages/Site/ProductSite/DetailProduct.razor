@@ -1,0 +1,33 @@
+﻿@page "/product/{ProductId:int}"
+@using Core.Models.Entity;
+@using Core.Models.Repository;
+@inject IProductDetailRepo _productDetailRepo;
+<div class="Product" style ="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;">
+    @foreach(var _productDetail in _productDetails)
+    {
+                 
+        <div class="product1" style = "padding:14px; border: 1px solid rgb(221, 221, 221);">
+
+            <img  src="@_productDetail.ImageUrl" />
+            <div class="i-desc">
+                <div class="i-title" style ="padding:20px 15px 20px 15px;">
+                    <h3><a href="/product/@_productDetail.Id/@_productDetail.Name" tabindex="0">@_productDetail.Name</a></h3>
+                </div>
+            </div>
+        </div>    
+    }
+                
+</div>
+
+
+@code {
+    [Parameter]
+    public int ProductId { get; set; }
+
+    List<ProductDetail> _productDetails = new List<ProductDetail>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _productDetails = await _productDetailRepo.GetAllProductDetailAsync(ProductId);
+    }
+}

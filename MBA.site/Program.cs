@@ -19,6 +19,8 @@ builder.Services.AddScoped<ISectionRepo, SectionRepo>();
 builder.Services.AddScoped<IDescribeRepo, DescribeRepo>();
 builder.Services.AddScoped<IImageRepo, ImageRepo>();
 builder.Services.AddScoped<ILeaderShipRepo, LeaderShipRepo>();
+builder.Services.AddScoped<IProductRepo, ProductRepo>();
+builder.Services.AddScoped<IProductDetailRepo, ProductDetailRepo>();
 builder.Services.AddDbContext<MBAContext>(
     o => o.UseSqlServer(builder.Configuration.GetConnectionString("MBADatabaseConnectionString")));
 var app = builder.Build();

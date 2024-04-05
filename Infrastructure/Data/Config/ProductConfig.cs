@@ -17,7 +17,6 @@ namespace Infrastructure.Data.Config
 			builder.HasKey(x => x.Id);
 			builder.Property(x => x.Name).HasMaxLength(128).IsRequired();
 			builder.Property(x => x.ImageUrl).HasMaxLength(128).IsRequired();
-			builder.Property(x => x.Url).HasMaxLength(128).IsRequired();
 			builder.Property(d => d.CreatedBy).HasMaxLength(55).IsRequired();
 			builder.Property(d => d.CreatedDate).IsRequired();
 			builder.Property(d => d.UpdatedDate).IsRequired(false);

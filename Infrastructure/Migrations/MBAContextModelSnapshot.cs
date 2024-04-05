@@ -68,131 +68,131 @@ namespace Infrastructure.Migrations
                         {
                             Id = 1,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5534),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(818),
                             Description = "VỀ CÔNG TY",
                             Name = "Big Title",
                             SectionId = 3,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5531)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(816)
                         },
                         new
                         {
                             Id = 2,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5536),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(820),
                             Description = "Tổng Giám đốc - Người sáng lập MBA",
                             Name = "General Manager",
                             SectionId = 3,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5535)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(819)
                         },
                         new
                         {
                             Id = 3,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5539),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(822),
                             Description = "Let’s Grow Together!\r\nCùng đến thành công!",
                             Name = "Slogan",
                             SectionId = 3,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5538)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(821)
                         },
                         new
                         {
                             Id = 4,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5541),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(824),
                             Description = "MBA International JSC",
                             Name = "Tag",
                             SectionId = 3,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5540)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(823)
                         },
                         new
                         {
                             Id = 5,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5543),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(826),
                             Description = "CÔNG TY CỔ PHẦN QUỐC TẾ MBA",
                             Name = "Title",
                             SectionId = 3,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5542)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(825)
                         },
                         new
                         {
                             Id = 6,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5545),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(828),
                             Description = "Công ty CP Quốc tế MBA là nhà sản xuất và phân phối hàng đầu các giải pháp toàn diện cho ngành Giáo Dục – Y Tế - Công Nghệ Cao. Với hơn 17 năm kinh nghiệm, MBA tự hào với đội ngũ nhân viên giàu kinh nghiệm, nhiệt huyết và chuyên nghiệp, luôn mang đến cho khách hàng những trải nghiệm tốt nhất về sản phẩm và dịch vụ chính hãng. Với  xu hướng phát triển không ngừng của ngành khoa học thông tin và cách mạng công nghiệp 4.0, nhằm đáp ứng nhu cầu ngày càng cao của khách hàng trong việc trang bị các thiết bị điện tử và các giải pháp công nghệ, Công Ty Cổ Phần Quốc Tế MBA đã mang đến cho Quý khách hàng những sản phẩm hiện đại nhất của các hãng nổi tiếng trên thị trường Bên cạnh đó ngoài chức năng phân phối, MBA cũng là đại diện bảo hành, bảo trì, sữa chữa và thực hiện các dịch vụ sau bán hàng của các đối tác nói trên nhằm cung cấp giải pháp toàn diện, hiệu quả cho khách hàng khi sử dụng sản phẩm MBA phân phối với đội kỹ thuật viên giàu kinh nghiệm, linh kiện thay thế chính hãng và giá cả hợp lý.",
                             Name = "Detail",
                             SectionId = 3,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5544)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(827)
                         },
                         new
                         {
                             Id = 7,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5547),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(830),
                             Description = "TẦM NHÌN - SỨ MỆNH",
                             Name = "Big Title",
                             SectionId = 4,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5546)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(828)
                         },
                         new
                         {
                             Id = 8,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5549),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(832),
                             Description = "Tầm nhìn thương hiệu",
                             Name = "Title",
                             SectionId = 4,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5548)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(831)
                         },
                         new
                         {
                             Id = 9,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5551),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(834),
                             Description = "MBA International Corporation luôn hướng tới mục tiêu duy trì vị trí thương hiệu hàng đầu tại Việt Nam trong lĩnh vực phân phối các Thiết bị Giáo dục – Y tế – Công nghệ cao.",
                             Name = "Detail",
                             SectionId = 4,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5550)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(833)
                         },
                         new
                         {
                             Id = 10,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5553),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(836),
                             Description = "Sứ mệnh",
                             Name = "Title2",
                             SectionId = 4,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5552)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(835)
                         },
                         new
                         {
                             Id = 11,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5554),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(837),
                             Description = "Với tôn chỉ \" Let's Grow Together! - Cùng đến thành công !\", Công ty CP Quốc Tế MBA luôn hướng tới sự phát triển bền vững không chỉ cho doanh nghiệp mà còn cho cộng đồng bằng cam kết mang những sản phẩm ngành Giáo Dục - Y Tế - Công Nghệ Cao chất lượng hàng đầu Thế giới với giá cả cạnh tranh nhất đến đông đảo Quý khách hàng.",
                             Name = "Title2",
                             SectionId = 4,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5553)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(836)
                         },
                         new
                         {
                             Id = 12,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5556),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(839),
                             Description = "LỊCH SỬ HÌNH THÀNH",
                             Name = "Big Title",
                             SectionId = 5,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5555)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(838)
                         },
                         new
                         {
                             Id = 13,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5558),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(841),
                             Description = "BAN LÃNH ĐẠO",
                             Name = "Big Title",
                             SectionId = 6,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5557)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(840)
                         });
                 });
 
@@ -240,47 +240,47 @@ namespace Infrastructure.Migrations
                         {
                             Id = 1,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5584),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(886),
                             SectionId = 1,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5581),
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(884),
                             Url = "/image/index/bg1.jpg"
                         },
                         new
                         {
                             Id = 2,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5586),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(888),
                             SectionId = 3,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5585),
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(887),
                             Url = "/image/Information/ceo.jpg"
                         },
                         new
                         {
                             Id = 3,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5588),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(890),
                             Name = "Image 1",
                             SectionId = 4,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5587),
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(889),
                             Url = "/image/Information/vision1.jpg"
                         },
                         new
                         {
                             Id = 4,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5590),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(892),
                             Name = "Image 2",
                             SectionId = 4,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5589),
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(891),
                             Url = "/image/Information/vision2.jpg"
                         },
                         new
                         {
                             Id = 5,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5592),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(894),
                             SectionId = 5,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5591),
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(893),
                             Url = "/image/Information/history.jpg"
                         });
                 });
@@ -331,51 +331,51 @@ namespace Infrastructure.Migrations
                         {
                             Id = 1,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5612),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(913),
                             ImageUrl = "/image/Information/ceo1.jpg",
                             Name = "MR NGUYỄN TRÍ ĐĂNG",
                             Position = "TRỢ LÝ TỔNG GIÁM ĐỐC",
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5610)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(910)
                         },
                         new
                         {
                             Id = 2,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5614),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(915),
                             ImageUrl = "/image/Information/ceo2.jpg",
                             Name = "MR NGUYỄN TRÍ ĐĂNG",
                             Position = "TRỢ LÝ TỔNG GIÁM ĐỐC",
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5613)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(914)
                         },
                         new
                         {
                             Id = 3,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5616),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(916),
                             ImageUrl = "/image/Information/ceo3.jpg",
                             Name = "MR NGUYỄN TRÍ ĐĂNG",
                             Position = "TRỢ LÝ TỔNG GIÁM ĐỐC",
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5615)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(916)
                         },
                         new
                         {
                             Id = 4,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5619),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(918),
                             ImageUrl = "/image/Information/ceo4.jpg",
                             Name = "MR NGUYỄN TRÍ ĐĂNG",
                             Position = "TRỢ LÝ TỔNG GIÁM ĐỐC",
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5618)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(917)
                         },
                         new
                         {
                             Id = 5,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5621),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(920),
                             ImageUrl = "/image/Information/ceo5.jpg",
                             Name = "MR NGUYỄN TRÍ ĐĂNG",
                             Position = "TRỢ LÝ TỔNG GIÁM ĐỐC",
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5620)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(919)
                         });
                 });
 
@@ -420,27 +420,27 @@ namespace Infrastructure.Migrations
                         {
                             Id = 1,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5315),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(664),
                             Name = "Home",
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5309),
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(657),
                             Url = "/"
                         },
                         new
                         {
                             Id = 2,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5317),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(666),
                             Name = "Introduction",
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5316),
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(665),
                             Url = "/introduction"
                         },
                         new
                         {
                             Id = 3,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5320),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(668),
                             Name = "Product",
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5319),
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(667),
                             Url = "/product"
                         });
                 });
@@ -477,14 +477,38 @@ namespace Infrastructure.Migrations
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Url")
-                        .IsRequired()
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
-
                     b.HasKey("Id");
 
                     b.ToTable("Product", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(938),
+                            ImageUrl = "/image/Product/product1.jpg",
+                            Name = "CÔNG NGHỆ CAO",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(936)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(940),
+                            ImageUrl = "/image/Product/product2.jpg",
+                            Name = "THIẾT BỊ Y TẾ",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(939)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(942),
+                            ImageUrl = "/image/Product/product3.jpg",
+                            Name = "THIẾT BỊ GIÁO DỤC",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(941)
+                        });
                 });
 
             modelBuilder.Entity("Core.Models.Entity.ProductDetail", b =>
@@ -509,7 +533,6 @@ namespace Infrastructure.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasMaxLength(1024)
                         .HasColumnType("nvarchar(1024)");
 
@@ -527,7 +550,6 @@ namespace Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Specifications")
-                        .IsRequired()
                         .HasMaxLength(1024)
                         .HasColumnType("nvarchar(1024)");
 
@@ -542,16 +564,157 @@ namespace Infrastructure.Migrations
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Url")
-                        .IsRequired()
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductDetail", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Code = "167",
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(961),
+                            ImageUrl = "/image/Product/moredetail/product1.jpg",
+                            Name = "CÔNG NGHỆ THÔNG TIN",
+                            ProductId = 1,
+                            Status = "Còn Hàng",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(954)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Code = "166",
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(964),
+                            ImageUrl = "/image/Product/moredetail/product2.jpg",
+                            Name = "CÔNG NGHỆ SINH HỌC",
+                            ProductId = 1,
+                            Status = "Còn Hàng",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(962)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Code = "166",
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(966),
+                            ImageUrl = "/image/Product/moredetail/product3.jpg",
+                            Name = "CÔNG NGHỆ VẬT LIỆU MỚI",
+                            ProductId = 1,
+                            Status = "Còn Hàng",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(965)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Code = "166",
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(969),
+                            ImageUrl = "/image/Product/moredetail/product4.jpg",
+                            Name = "CÔNG NGHỆ TỰ ĐỘNG HOÁ",
+                            ProductId = 1,
+                            Status = "Còn Hàng",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(967)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Code = "166",
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(971),
+                            ImageUrl = "/image/Product/moredetail/product4.jpg",
+                            Name = "HỆ THỐNG PHÒNG TAI MŨI HỌNG",
+                            ProductId = 2,
+                            Status = "Còn Hàng",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(970)
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Code = "166",
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(973),
+                            ImageUrl = "/image/Product/moredetail/product4.jpg",
+                            Name = "HỆ THỐNG PHÒNG CHUẨN ĐOÁN",
+                            ProductId = 2,
+                            Status = "Còn Hàng",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(972)
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Code = "166",
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(976),
+                            ImageUrl = "/image/Product/moredetail/product4.jpg",
+                            Name = "HỆ THỐNG PHÒNG CHỤP CT",
+                            ProductId = 2,
+                            Status = "Còn Hàng",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(974)
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Code = "166",
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(978),
+                            ImageUrl = "/image/Product/moredetail/product4.jpg",
+                            Name = "HỆ THỐNG PHÒNG CHỤP PHẪU THUẬT",
+                            ProductId = 2,
+                            Status = "Còn Hàng",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(977)
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Code = "166",
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(980),
+                            ImageUrl = "/image/Product/moredetail/product4.jpg",
+                            Name = "PHÒNG HỌC BỘ MÔN HOÁ",
+                            ProductId = 3,
+                            Status = "Còn Hàng",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(979)
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Code = "166",
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(982),
+                            ImageUrl = "/image/Product/moredetail/product4.jpg",
+                            Name = "PHÒNG HỌC BỘ MÔN LÝ",
+                            ProductId = 3,
+                            Status = "Còn Hàng",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(981)
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Code = "166",
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(985),
+                            ImageUrl = "/image/Product/moredetail/product4.jpg",
+                            Name = "PHÒNG HỌC TIN HỌC",
+                            ProductId = 3,
+                            Status = "Còn Hàng",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(983)
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Code = "166",
+                            CreatedBy = "Admin",
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(987),
+                            ImageUrl = "/image/Product/moredetail/product4.jpg",
+                            Name = "PHÒNG HỌC BỘ MÔN SINH",
+                            ProductId = 3,
+                            Status = "Còn Hàng",
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(986)
+                        });
                 });
 
             modelBuilder.Entity("Core.Models.Entity.Section", b =>
@@ -604,55 +767,55 @@ namespace Infrastructure.Migrations
                         {
                             Id = 1,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5497),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(788),
                             Name = "Home",
                             PageId = 1,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5495)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(786)
                         },
                         new
                         {
                             Id = 2,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5499),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(790),
                             Name = "Introduction",
                             PageId = 2,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5498)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(789)
                         },
                         new
                         {
                             Id = 3,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5501),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(792),
                             Name = "About",
                             SectionParentId = 2,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5500)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(791)
                         },
                         new
                         {
                             Id = 4,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5504),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(794),
                             Name = "Vision",
                             SectionParentId = 2,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5503)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(793)
                         },
                         new
                         {
                             Id = 5,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5505),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(796),
                             Name = "History",
                             SectionParentId = 2,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5505)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(795)
                         },
                         new
                         {
                             Id = 6,
                             CreatedBy = "Admin",
-                            CreatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5507),
+                            CreatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(799),
                             Name = "Leadership",
                             SectionParentId = 2,
-                            UpdatedDate = new DateTime(2024, 4, 3, 18, 34, 49, 91, DateTimeKind.Local).AddTicks(5506)
+                            UpdatedDate = new DateTime(2024, 4, 5, 19, 46, 44, 143, DateTimeKind.Local).AddTicks(798)
                         });
                 });
 

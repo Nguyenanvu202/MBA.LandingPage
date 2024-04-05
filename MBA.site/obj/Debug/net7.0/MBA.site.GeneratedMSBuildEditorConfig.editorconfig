@@ -32,16 +32,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/MBA.site/MBA.site/Pages/Site/Product/DetailProduct.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxQcm9kdWN0XERldGFpbFByb2R1Y3QucmF6b3I=
+[E:/MBA.site/MBA.site/Pages/Site/ProductSite/DetailProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxQcm9kdWN0U2l0ZVxEZXRhaWxQcm9kdWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/MBA.site/MBA.site/Pages/Site/Product/GeneralProduct.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxQcm9kdWN0XEdlbmVyYWxQcm9kdWN0LnJhem9y
+[E:/MBA.site/MBA.site/Pages/Site/ProductSite/GeneralProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxQcm9kdWN0U2l0ZVxHZW5lcmFsUHJvZHVjdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/MBA.site/MBA.site/Pages/Site/Product/MoreDetailProduct.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxQcm9kdWN0XE1vcmVEZXRhaWxQcm9kdWN0LnJhem9y
+[E:/MBA.site/MBA.site/Pages/Site/ProductSite/MoreDetailProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxQcm9kdWN0U2l0ZVxNb3JlRGV0YWlsUHJvZHVjdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/MBA.site/MBA.site/Shared/SurveyPrompt.razor]

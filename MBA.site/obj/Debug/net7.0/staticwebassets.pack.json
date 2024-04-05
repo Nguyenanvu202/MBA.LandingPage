@@ -77,8 +77,28 @@
       "PackagePath": "staticwebassets\\image\\Product\\moredetail\\product1.jpg"
     },
     {
+      "Id": "E:\\MBA.site\\MBA.site\\wwwroot\\image\\Product\\moredetail\\product2.jpg",
+      "PackagePath": "staticwebassets\\image\\Product\\moredetail\\product2.jpg"
+    },
+    {
+      "Id": "E:\\MBA.site\\MBA.site\\wwwroot\\image\\Product\\moredetail\\product3.jpg",
+      "PackagePath": "staticwebassets\\image\\Product\\moredetail\\product3.jpg"
+    },
+    {
+      "Id": "E:\\MBA.site\\MBA.site\\wwwroot\\image\\Product\\moredetail\\product4.jpg",
+      "PackagePath": "staticwebassets\\image\\Product\\moredetail\\product4.jpg"
+    },
+    {
       "Id": "E:\\MBA.site\\MBA.site\\wwwroot\\image\\Product\\product1.jpg",
       "PackagePath": "staticwebassets\\image\\Product\\product1.jpg"
+    },
+    {
+      "Id": "E:\\MBA.site\\MBA.site\\wwwroot\\image\\Product\\product2.jpg",
+      "PackagePath": "staticwebassets\\image\\Product\\product2.jpg"
+    },
+    {
+      "Id": "E:\\MBA.site\\MBA.site\\wwwroot\\image\\Product\\product3.jpg",
+      "PackagePath": "staticwebassets\\image\\Product\\product3.jpg"
     },
     {
       "Id": "E:\\MBA.site\\MBA.site\\wwwroot\\image\\index\\bg1.jpg",

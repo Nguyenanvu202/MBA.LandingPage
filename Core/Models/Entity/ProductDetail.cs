@@ -13,9 +13,8 @@ namespace Core.Models.Entity
         public string ImageUrl { get; set; }
         public string Code { get; set; }
         public string Status { get; set; }
-        public string Description { get; set; }
-        public string Specifications { get; set; }
-        public string Url { get; set; }
+        public string? Description { get; set; }
+        public string? Specifications { get; set; }
 
         public virtual int ProductId { get; set; }
         public virtual Product Product { get; set; }
