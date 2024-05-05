@@ -9,15 +9,12 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Data
 {
-    public class MBAContext : DbContext
+    public sealed class MBAContext : DbContext 
     {
-        public MBAContext(DbContextOptions options) : base(options)
+        public MBAContext(DbContextOptions<MBAContext> options) : base(options)
         {
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Server=Sechiii\\SQLEXPRESS;Database=MbaDb;Trusted_Connection=True; TrustServerCertificate=True;");
-        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

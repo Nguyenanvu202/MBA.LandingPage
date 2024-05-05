@@ -10,6 +10,8 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MBA.site
 build_property.RootNamespace = MBA.site
 build_property.ProjectDir = E:\MBA.site\MBA.site\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
@@ -26,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/MBA.site/MBA.site/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Pages/Site/Account/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxBY2NvdW50XFJlZ2lzdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/MBA.site/MBA.site/Pages/Site/Index.razor]

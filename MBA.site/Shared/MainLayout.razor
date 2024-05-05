@@ -1,4 +1,21 @@
 ﻿@inherits LayoutComponentBase
-<div style ="padding-left:130px; padding-top:85px">
-	@Body
+
+<PageTitle>BlazorApp1</PageTitle>
+
+<div class="page">
+    <div class="sidebar" style="z-index:3;
+    position:absolute;">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+        </div>
+
+        <article class="content px-4" style="position: relative;
+    z-index: 2;">
+            @Body
+        </article>
+    </main>
 </div>

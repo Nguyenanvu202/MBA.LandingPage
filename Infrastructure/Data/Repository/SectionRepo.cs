@@ -1,5 +1,4 @@
-﻿using Azure;
-using Core.Models.Entity;
+﻿using Core.Models.Entity;
 using Core.Models.Repository;
 using Microsoft.EntityFrameworkCore;
 using System;
