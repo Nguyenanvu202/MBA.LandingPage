@@ -1,0 +1,87 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MBA.site
+build_property.RootNamespace = MBA.site
+build_property.ProjectDir = E:\MBA.site\MBA.site\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\MBA.site\MBA.site
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/MBA.site/MBA.site/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Pages/Site/Account/Component/LoginForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxBY2NvdW50XENvbXBvbmVudFxMb2dpbkZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Pages/Site/Account/Component/RegisterForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxBY2NvdW50XENvbXBvbmVudFxSZWdpc3RlckZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Pages/Site/Account/Shared/ExternalLoginPicker.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxBY2NvdW50XFNoYXJlZFxFeHRlcm5hbExvZ2luUGlja2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Pages/Site/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Pages/Site/ProductSite/DetailProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxQcm9kdWN0U2l0ZVxEZXRhaWxQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Pages/Site/ProductSite/GeneralProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxQcm9kdWN0U2l0ZVxHZW5lcmFsUHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Pages/Site/ProductSite/MoreDetailProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxQcm9kdWN0U2l0ZVxNb3JlRGV0YWlsUHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Pages/Site/Information.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2l0ZVxJbmZvcm1hdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-q8x7nm3vle
+
+[E:/MBA.site/MBA.site/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mjrw3pers0
+
+[E:/MBA.site/MBA.site/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-qatmua96bz
+
+[E:/MBA.site/MBA.site/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/MBA.site/MBA.site/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
