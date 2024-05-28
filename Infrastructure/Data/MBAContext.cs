@@ -14,6 +14,10 @@ namespace Infrastructure.Data
         public MBAContext(DbContextOptions<MBAContext> options) : base(options)
         {
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=Sechiii\\SQLEXPRESS;Database=Mba.Admin;Trusted_Connection=True; TrustServerCertificate=True;");
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -27,5 +31,7 @@ namespace Infrastructure.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductDetail> ProductDetails { get; set; }
         public DbSet<LeaderShip> LeaderShips { get; set; }
+
+        public DbSet<User> Users { get; set; }
     }
 }

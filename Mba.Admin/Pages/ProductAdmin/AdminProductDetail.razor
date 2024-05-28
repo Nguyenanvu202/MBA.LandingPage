@@ -1,0 +1,129 @@
+﻿
+@page "/products/{ProductId:int}"
+@using Core.Models.Entity
+@using Core.Models.Repository
+@inject IProductDetailRepo _productDetailRepo 
+<PageTitle>ProductDetails</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="ProductDetails" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenRow>
+        <RadzenColumn SizeMD=12>
+            <RadzenDataGrid @ref="grid0" ColumnWidth="200px" AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+                            Data="@productDetails" TItem="ProductDetail" RowSelect="@EditRow">
+                <Columns>
+                    <RadzenDataGridColumn TItem="ProductDetail" Property="Name" Title="Name">
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ProductDetail" Property="ImageUrl" Title="Image Url">
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ProductDetail" Property="Code" Title="Code">
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ProductDetail" Property="Status" Title="Status">
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ProductDetail" Property="Description" Title="Description">
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ProductDetail" Property="Specifications" Title="Specifications">
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ProductDetail" Property="Product.Name" Title="Product">
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ProductDetail" Property="CreatedBy" Title="Created By">
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ProductDetail" Property="UpdatedBy" Title="Updated By">
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ProductDetail" Property="CreatedDate" Title="Created Date">
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ProductDetail" Property="UpdatedDate" Title="Updated Date">
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ProductDetail" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                        <Template Context="productDetail">
+
+                            <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                                          Shade="Shade.Lighter" Variant="Variant.Flat"
+                                          Click=@(args => GridDeleteButtonClick(args, productDetail)) @onclick:stopPropagation="true" />
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+
+            </RadzenDataGrid>
+
+        </RadzenColumn>
+    </RadzenRow>
+</RadzenStack>
+
+
+@code {
+    [Inject]
+    protected IJSRuntime JSRuntime { get; set; }
+
+    [Inject]
+    protected NavigationManager NavigationManager { get; set; }
+
+    [Inject]
+    protected DialogService DialogService { get; set; }
+
+    [Inject]
+    protected TooltipService TooltipService { get; set; }
+
+    [Inject]
+    protected ContextMenuService ContextMenuService { get; set; }
+
+    [Inject]
+    protected NotificationService NotificationService { get; set; }
+
+
+    protected IEnumerable<ProductDetail> productDetails;
+
+    protected RadzenDataGrid<ProductDetail> grid0;
+    [Parameter]
+    public int ProductId { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        productDetails = await _productDetailRepo.GetAllProductDetailAsync(ProductId);
+    }
+
+    protected async Task AddButtonClick(MouseEventArgs args)
+    {
+        await DialogService.OpenAsync<AddProductDetail>("Add ProductDetail", null);
+        await grid0.Reload();
+    }
+
+    protected async Task EditRow(ProductDetail args)
+    {
+        await DialogService.OpenAsync<EditProductDetail>("Edit ProductDetail", new Dictionary<string, object> { { "Id", args.Id } });
+        await grid0.Reload();
+    }
+
+    protected async Task GridDeleteButtonClick(MouseEventArgs args, ProductDetail productDetail)
+    {
+        @*try
+        {
+            if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+            {
+                var deleteResult = await _productDetailRepo.DeleteProductDetailAsync();
+
+                if (deleteResult != null)
+                {
+                    await grid0.Reload();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+                {
+                    Severity = NotificationSeverity.Error,
+                    Summary = $"Error",
+                    Detail = $"Unable to delete ProductDetail"
+                });
+        }*@
+    }
+}
+

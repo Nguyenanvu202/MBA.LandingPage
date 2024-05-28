@@ -1,0 +1,94 @@
+﻿@page "/add-role"
+@using Mba.Admin.Areas.Identity.Data
+@using Microsoft.AspNetCore.Identity
+@inject RoleManager<IdentityRole> _roleManager
+@inject NavigationManager _navigation
+
+<PageTitle>Add AspNetRole</PageTitle>
+<RadzenColumn SizeMD=12>
+    <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Role</RadzenAlert>
+    <RadzenTemplateForm TItem="CreateRoleViewModel" Data="@roleModel" Visible="@(roleModel != null)" Submit="@FormSubmit">
+
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Name" Component="Name" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenTextBox style="display: block; width: 100%" @bind-Value="@roleModel.RoleName" Name="Name" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenAlert AlertStyle="AlertStyle.Danger" Variant="Variant.Flat" Shade="Shade.Lighter" Visible="@errorVisible"> Role Already Exists </RadzenAlert>
+        
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+            <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+            <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick" />
+        </RadzenStack>
+    </RadzenTemplateForm>
+</RadzenColumn>
+
+
+
+@code {
+    [Inject]
+    protected IJSRuntime JSRuntime { get; set; }
+
+    [Inject]
+    protected NavigationManager NavigationManager { get; set; }
+
+    [Inject]
+    protected DialogService DialogService { get; set; }
+
+    [Inject]
+    protected TooltipService TooltipService { get; set; }
+
+    [Inject]
+    protected ContextMenuService ContextMenuService { get; set; }
+
+    [Inject]
+    protected NotificationService NotificationService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        roleModel = new CreateRoleViewModel();
+    }
+    protected bool errorVisible;
+    protected CreateRoleViewModel roleModel;
+
+    protected async Task FormSubmit()
+    {
+        try
+        {
+            // Check if the role already exists
+            bool roleExists = await _roleManager.RoleExistsAsync(roleModel?.RoleName);
+            if (roleExists)
+            {
+                errorVisible = true;
+            }
+            else
+            {
+                // Create the role
+                // We just need to specify a unique role name to create a new role
+                IdentityRole identityRole = new IdentityRole
+                    {
+                        Name = roleModel?.RoleName
+                    };
+                // Saves the role in the underlying AspNetRoles table
+                IdentityResult result = await _roleManager.CreateAsync(identityRole);
+                if (result.Succeeded)
+                {
+                    _navigation.NavigateTo("/roles-list");
+                }
+
+            }
+        }
+        catch (Exception ex)
+        {
+            errorVisible = true;
+        }
+    }
+
+    protected async Task CancelButtonClick(MouseEventArgs args)
+    {
+        DialogService.Close(null);
+    }
+}

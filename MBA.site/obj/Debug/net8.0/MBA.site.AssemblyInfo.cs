@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MBA.site")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fe2641c947f3eb96dbda619b7260d9b4dc652e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce266bfa66ac383379dc4ff8817eb53b9d39eacf")]
 [assembly: System.Reflection.AssemblyProductAttribute("MBA.site")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MBA.site")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

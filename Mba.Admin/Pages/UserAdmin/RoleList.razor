@@ -1,0 +1,106 @@
+﻿@page "/roles-list"
+@using Microsoft.AspNetCore.Identity
+@inject RoleManager<IdentityRole> _roleManager
+@using Microsoft.EntityFrameworkCore;
+
+
+<PageTitle>Roles</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Roles" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenRow>
+        <RadzenColumn SizeMD=12>
+            <RadzenDataGrid @ref="grid0" ColumnWidth="200px" AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+                            Data="@_roles" TItem="IdentityRole" RowSelect="@EditRow">
+                <Columns>
+                    <RadzenDataGridColumn TItem="IdentityRole" Property="Id" Title="Id">
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="IdentityRole" Property="Name" Title="Name">
+                    </RadzenDataGridColumn>
+                    
+                    <RadzenDataGridColumn TItem="IdentityRole" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                        <Template Context="_roles">
+
+                            <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                                          Shade="Shade.Lighter" Variant="Variant.Flat"
+                                          Click=@(args => GridDeleteButtonClick(args, _roles)) @onclick:stopPropagation="true" />
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+
+            </RadzenDataGrid>
+
+        </RadzenColumn>
+    </RadzenRow>
+</RadzenStack>
+
+@code {
+    [Inject]
+    protected IJSRuntime JSRuntime { get; set; }
+
+    [Inject]
+    protected NavigationManager NavigationManager { get; set; }
+
+    [Inject]
+    protected DialogService DialogService { get; set; }
+
+    [Inject]
+    protected TooltipService TooltipService { get; set; }
+
+    [Inject]
+    protected ContextMenuService ContextMenuService { get; set; }
+
+    [Inject]
+    protected NotificationService NotificationService { get; set; }
+
+    protected List<IdentityRole> _roles;
+    protected RadzenDataGrid<IdentityRole> grid0;
+    protected override async Task OnInitializedAsync()
+    {
+        _roles = await _roleManager.Roles.ToListAsync();
+    }
+
+    protected async Task AddButtonClick(MouseEventArgs args)
+    {
+        await DialogService.OpenAsync<AddRole>("Add Role", null);
+        await grid0.Reload();
+    }
+
+    protected async Task EditRow(IdentityRole args)
+    {
+        await DialogService.OpenAsync<EditRole>("Edit AspNetRole", new Dictionary<string, object> { { "Id", args.Id } });
+    }
+
+    protected async Task GridDeleteButtonClick(MouseEventArgs args, IdentityRole role)
+    {
+        try
+        {
+            if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+            {
+                var deleteResult = await _roleManager.DeleteAsync(role);
+
+                if (deleteResult != null)
+                {
+                    await grid0.Reload();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+                {
+                    Severity = NotificationSeverity.Error,
+                    Summary = $"Error",
+                    Detail = $"Unable to delete AspNetRole"
+                });
+        }
+    }
+}

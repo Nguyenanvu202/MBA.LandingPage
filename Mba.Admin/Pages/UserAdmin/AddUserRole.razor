@@ -1,0 +1,95 @@
+﻿@page "/add-asp-net-user-role"
+@using Mba.Admin.Areas.Identity.Data
+@using Mba.Admin.Areas.Identity.Service
+@using Microsoft.AspNetCore.Identity
+@inject RoleService _roleService
+@inject UserService _userService
+@inject UserRoleService _userRoleService
+<PageTitle>Add AspNetUserRole</PageTitle>
+<RadzenColumn SizeMD=12>
+    <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save User Role</RadzenAlert>
+    <RadzenTemplateForm TItem="CreateUserRoleViewModel" Data="@_userRole" Visible="@(_userRole != null)" Submit="@FormSubmit">
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="User" Component="User" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenDropDown Data="@_users" TextProperty="UserName" ValueProperty="UserName" AllowClear=true
+                                Placeholder="Choose User" style="display: block; width: 100%" @bind-Value="@_userRole.Username" Name="UserId" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Role" Component="Role" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenDropDown Data="@_roles" TextProperty="Name" ValueProperty="Name" AllowClear=true
+                                Placeholder="Choose Role" style="display: block; width: 100%" @bind-Value="@_userRole.RoleName" Name="Role" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+            <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+            <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick" />
+        </RadzenStack>
+    </RadzenTemplateForm>
+</RadzenColumn>
+
+@code {
+    [Inject]
+    protected IJSRuntime JSRuntime { get; set; }
+
+    [Inject]
+    protected NavigationManager NavigationManager { get; set; }
+
+    [Inject]
+    protected DialogService DialogService { get; set; }
+
+    [Inject]
+    protected TooltipService TooltipService { get; set; }
+
+    [Inject]
+    protected ContextMenuService ContextMenuService { get; set; }
+
+    [Inject]
+    protected NotificationService NotificationService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _userRole = new CreateUserRoleViewModel();
+
+        _users = await _userService.GetAllUserAsync();
+
+        _roles = await _roleService.GetAllRolesAsync();
+    }
+    protected bool errorVisible;
+    protected CreateUserRoleViewModel _userRole;
+
+    protected IEnumerable<IdentityRole> _roles;
+    protected IEnumerable<MbaAdminUser> _users;
+
+    protected async Task FormSubmit()
+    {
+        try
+        {
+            if (await _userRoleService.CreateRoleForUserAsync(_userRole) == false)
+            {
+                throw new Exception("User has set the role before!");
+            }
+            else
+            {
+                await _userRoleService.CreateRoleForUserAsync(_userRole);
+            }
+
+            DialogService.Close(_userRole);
+        }
+        catch (Exception ex)
+        {
+            errorVisible = true;
+        }
+    }
+
+    protected async Task CancelButtonClick(MouseEventArgs args)
+    {
+        DialogService.Close(null);
+    }
+}

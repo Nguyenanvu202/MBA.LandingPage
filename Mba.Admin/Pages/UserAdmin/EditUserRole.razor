@@ -1,0 +1,91 @@
+﻿@page "/edit-user-role"
+@using Mba.Admin.Areas.Identity.Data
+@using Mba.Admin.Areas.Identity.Service
+@using Microsoft.AspNetCore.Identity
+@inject UserRoleService _userRoleService
+@inject RoleService _roleService
+@inject UserService _userService
+<PageTitle>Edit AspNetUserRole</PageTitle>
+
+<RadzenColumn SizeMD=12>
+    <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save AspNetUserRole</RadzenAlert>
+    <RadzenTemplateForm TItem="UserRoleViewModel" Data="@_userRole" Visible="@(_userRole != null)" Submit="@FormSubmit">
+        
+
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Role" Component="Role" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenDropDown Data="@_roles" TextProperty="Name" ValueProperty="Name" AllowClear=true
+                                Placeholder="Choose Role" style="display: block; width: 100%" @bind-Value="@_userRole.RoleName" Name="RoleName" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+            <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+            <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick" />
+        </RadzenStack>
+    </RadzenTemplateForm>
+</RadzenColumn>
+
+@code {
+    [Inject]
+    protected IJSRuntime JSRuntime { get; set; }
+
+    [Inject]
+    protected NavigationManager NavigationManager { get; set; }
+
+    [Inject]
+    protected DialogService DialogService { get; set; }
+
+    [Inject]
+    protected TooltipService TooltipService { get; set; }
+
+    [Inject]
+    protected ContextMenuService ContextMenuService { get; set; }
+
+    [Inject]
+    protected NotificationService NotificationService { get; set; }
+
+    [Parameter]
+    public string UserName { get; set; }
+
+    [Parameter]
+    public string RoleName { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _userRole = await _userRoleService.GetUserRoleById(UserName, RoleName);
+
+
+        _roles = await _roleService.GetAllRolesAsync();
+    }
+    protected bool errorVisible;
+    protected UserRoleViewModel _userRole;
+
+    protected IEnumerable<IdentityRole> _roles;
+    protected async Task FormSubmit()
+    {
+        try
+        {
+            if (await _userRoleService.UpdateRoleForUser(UserName, RoleName, _userRole) == false)
+            {
+                throw new Exception("User has set the role before!");
+            }
+            else
+            {
+                await _userRoleService.UpdateRoleForUser(UserName, RoleName, _userRole);
+            }
+
+            DialogService.Close(_userRole);
+        }
+        catch (Exception ex)
+        {
+            errorVisible = true;
+        }
+    }
+    protected async Task CancelButtonClick(MouseEventArgs args)
+    {
+        DialogService.Close(null);
+    }
+}
